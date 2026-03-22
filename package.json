@@ -1,0 +1,56 @@
+{
+  "name": "@philiprehberger/http-error",
+  "version": "0.1.0",
+  "description": "Typed HTTP error classes with status codes, factory methods, and serialization",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "keywords": [
+    "http",
+    "error",
+    "status",
+    "api",
+    "rest",
+    "express"
+  ],
+  "author": "philiprehberger",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philiprehberger/ts-http-error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/philiprehberger/ts-http-error/issues"
+  },
+  "homepage": "https://github.com/philiprehberger/ts-http-error#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
