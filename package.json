@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/http-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typed HTTP error classes with status codes, factory methods, and serialization",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -26,7 +26,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "http",
@@ -36,7 +37,7 @@
     "rest",
     "express"
   ],
-  "author": "philiprehberger",
+  "author": "Philip Rehberger",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -47,7 +48,7 @@
   },
   "homepage": "https://github.com/philiprehberger/ts-http-error#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
