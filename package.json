@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/http-error",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Typed HTTP error classes with status codes, factory methods, and serialization",
   "type": "module",
   "main": "./dist/index.cjs",
